@@ -26,9 +26,14 @@ export default function App() {
             <img src="me.jpeg" alt="" className="rounded-full border border-white w-8 h-8 absolute bottom-6 right-6"/>
           </div>
         </div>
+        <p className='font-boska font-bold text-white text-5xl text-center'>Projects</p>
         <div className='flex justify-around items-center my-20 grid-cols-1 md:grid-cols-2'>
           <Projects img={`/Rento.png`} name={'Rento'} discription={'hello this is the discription and here is all the details of the things used and about it'}/>
           <Projects img={`/Rento.png`} name={'Rento'} discription={'hello this is the discription and here is all the details of the things used and about it'}/>
+        </div>
+        <p className='font-boska font-bold text-white text-5xl text-center'>About me</p>
+        <div>
+          <p className='text-white text-center text-3xl'>I am <span className='bg-gradient-to-r from-red-500 via-purple-500 to-violet-600 bg-clip-text text-transparent font-bold'>Aryan Bola</span>, a 2nd year student at DU, with 6 months of Web Development experience</p>
         </div>
       </div>
     </>
