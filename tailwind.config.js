@@ -1,3 +1,5 @@
+import { animate } from "motion";
+
 // tailwind.config.js
 export default {
   content: [
@@ -7,7 +9,10 @@ export default {
   theme: {
     extend: {
       fontFamily: {
-        boska: ['Boska', 'serif'], // alias 'boska'
+        boska: ['Boska', 'serif'],
+      },
+      animation: {
+        spinSlow: 'spin 10s linear infinite',
       },
     },
   },
