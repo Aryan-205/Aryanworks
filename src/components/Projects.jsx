@@ -2,7 +2,7 @@ export default function Projects({img,name,discription}){
   return (
     <>
     <div className="border border-white rounded-lg w-fit p-4 space-y-2 md:space-y-4">
-      <img src={`${img}`} alt="" className="w-64 h-32  md:w-96 md:h-58 rounded-lg"/>
+      <img src={`${img}`} alt="" className="w-64 h-32  md:w-96 md:h-56 rounded-lg"/>
       <div className="text-white font-boska">
         <p className="font-bold text-xl md:text-4xl">{name}</p>
         <p className="text-sm md:text-lg w-64 md:w-96">{discription}</p>

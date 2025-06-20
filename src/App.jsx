@@ -48,6 +48,7 @@ export default function App() {
             <Projects img={`/Rento.png`} name={'Rento'} discription={'hello this is the discription and here is all the details of the things used and about it'}/>
           </div>
         </div>
+        <button className="text-white px-2 py-1 border rounded-3xl text-xs md:text-sm place-items-center">View more</button>
 
 
         <p className='font-boska font-bold text-white text-2xl md:text-5xl text-center mt-8 md:mt-20'>Snippets</p>
