@@ -1,0 +1,23 @@
+[
+  {
+    "img": "/Rento.png",
+    "name": "Rento",
+    "description": "A modern rental platform with advanced search and booking capabilities",
+    "githubUrl": "https://github.com/Aryan-205",
+    "liveUrl": "https://x.com/BolaJi_69"
+  },
+  {
+    "img": "/Rento.png",
+    "name": "Portfolio",
+    "description": "Interactive portfolio showcasing modern web development skills",
+    "githubUrl": "https://github.com/Aryan-205",
+    "liveUrl": "https://x.com/BolaJi_69"
+  },
+  {
+    "img": "/Rento.png",
+    "name": "Task Manager",
+    "description": "Full-stack task management app with real-time collaboration",
+    "githubUrl": "https://github.com/Aryan-205",
+    "liveUrl": "https://x.com/BolaJi_69"
+  }
+]
