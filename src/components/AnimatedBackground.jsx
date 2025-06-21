@@ -1,13 +1,14 @@
 import { motion } from "motion/react"; // Add motion import
 
 export default function AnimatedBackground({ isDark }) {
+  console.log(Math.floor(Math.random()*100))
   return (
     <div className="fixed inset-0 overflow-hidden pointer-events-none">
       {/* Floating Orbs */}
       {[...Array(6)].map((_, i) => (
         <motion.div
           key={i}
-          className={`absolute rounded-full ${
+          className={`absolute rounded-md ${
             isDark
               ? 'bg-gradient-to-r from-blue-500/10 to-purple-500/10'
               : 'bg-gradient-to-r from-blue-300/20 to-purple-300/20'
@@ -32,42 +33,20 @@ export default function AnimatedBackground({ isDark }) {
         />
       ))}
 
-      {/* Grid Pattern */}
-      <motion.div
-        className={`absolute inset-0 opacity-20 ${
-          isDark ? 'bg-white' : 'bg-black'
-        }`}
-        style={{
-          backgroundImage: `
-            linear-gradient(${isDark ? 'rgba(255,255,255,0.1)' : 'rgba(0,0,0,0.1)'} 1px, transparent 1px),
-            linear-gradient(90deg, ${isDark ? 'rgba(255,255,255,0.1)' : 'rgba(0,0,0,0.1)'} 1px, transparent 1px)
-          `,
-          backgroundSize: '50px 50px',
-        }}
-        animate={{
-          backgroundPosition: ['0px 0px', '50px 50px'],
-        }}
-        transition={{
-          duration: 20,
-          repeat: Infinity,
-          ease: "linear",
-        }}
-      />
-
       {/* Particle System */}
-      {[...Array(20)].map((_, i) => (
+      {[...Array(200)].map((_, i) => (
         <motion.div
           key={`particle-${i}`}
           className={`absolute w-1 h-1 rounded-full ${
-            isDark ? 'bg-white/30' : 'bg-black/30'
+            isDark ? 'bg-white/30' : 'bg-black/50'
           }`}
           style={{
             left: `${Math.random() * 100}%`,
             top: `${Math.random() * 100}%`,
           }}
           animate={{
-            y: [-20, -100],
-            opacity: [0, 1, 0],
+            y: [20, 100],
+            opacity: [1, 0],
           }}
           transition={{
             duration: Math.random() * 3 + 2,

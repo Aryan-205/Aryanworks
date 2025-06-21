@@ -83,9 +83,8 @@ export default function SkillOrb({ icon, label, skills, delay = 0 }) { // 'icon'
             key={item.id} // Using unique ID as key
             className={`
               text-xs md:text-sm lg:text-base font-medium border-2 rounded-3xl
-              flex items-center justify-center py-2 px-4 md:py-2.5 md:px-5
-              hover:text-blue-500 transition-colors duration-200
-              ${isDark ? 'text-white border-white/30 hover:border-blue-500' : 'text-black border-black/30 hover:border-blue-500'}
+              flex items-center justify-center py-2 px-4 md:py-2 md:px-5 
+              ${isDark ? 'text-white border-white/30 ' : 'text-black border-black/30'}
             `}
             initial={{ opacity: 0, y: 20 }} // Start invisible and slightly below
             whileInView={{ opacity: 1, y: 0 }} // Animate to visible and in place

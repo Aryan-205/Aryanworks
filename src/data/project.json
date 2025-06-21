@@ -2,22 +2,22 @@
   {
     "img": "/Rento.png",
     "name": "Rento",
-    "description": "A modern rental platform with advanced search and booking capabilities",
-    "githubUrl": "https://github.com/Aryan-205",
-    "liveUrl": "https://x.com/BolaJi_69"
+    "description": "A modern rental platform with clean ui and booking capabilities",
+    "githubUrl": "https://github.com/Aryan-205/Rento",
+    "liveUrl": "https://rento-beta.vercel.app/"
   },
   {
-    "img": "/Rento.png",
+    "img": "/Portfolio.png",
     "name": "Portfolio",
     "description": "Interactive portfolio showcasing modern web development skills",
-    "githubUrl": "https://github.com/Aryan-205",
+    "githubUrl": "https://github.com/Aryan-205/Aryanworks",
     "liveUrl": "https://x.com/BolaJi_69"
   },
   {
-    "img": "/Rento.png",
-    "name": "Task Manager",
-    "description": "Full-stack task management app with real-time collaboration",
-    "githubUrl": "https://github.com/Aryan-205",
+    "img": "/socialMedia.png",
+    "name": "Social Media App",
+    "description": "Full-stack Social media app with photo upload and edit feature",
+    "githubUrl": "https://github.com/Aryan-205/SocialMediaApp",
     "liveUrl": "https://x.com/BolaJi_69"
   }
 ]

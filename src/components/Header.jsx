@@ -7,9 +7,9 @@ export default function Header() {
 
   const navItems = [
     { name: 'Home', id: 'home' },
+    { name: 'Skills', id: 'skills' },
     { name: 'Projects', id: 'projects' },
     { name: 'Designs', id:'designs'},
-    { name: 'Skills', id: 'skills' },
     { name: 'About', id: 'about' }
   ];
 
