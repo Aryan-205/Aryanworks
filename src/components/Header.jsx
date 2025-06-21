@@ -8,6 +8,7 @@ export default function Header() {
   const navItems = [
     { name: 'Home', id: 'home' },
     { name: 'Projects', id: 'projects' },
+    { name: 'Designs', id:'designs'},
     { name: 'Skills', id: 'skills' },
     { name: 'About', id: 'about' }
   ];
@@ -25,7 +26,7 @@ export default function Header() {
 
   return (
     <motion.div
-      className={`fixed top-4 left-4 right-4 md:left-20 md:right-20 z-50 flex justify-between items-center px-6 py-3 rounded-2xl backdrop-blur-md border ${
+      className={`fixed top-4 left-4 right-4 md:left-32 md:right-32 z-50 flex justify-between items-center px-6 py-3 rounded-full backdrop-blur-md border ${
         isDark
           ? 'bg-black/20 border-white/20 text-white'
           : 'bg-white/20 border-black/20 text-black'
@@ -34,12 +35,13 @@ export default function Header() {
       animate={{ y: 0, opacity: 1 }}
       transition={{ duration: 0.6, delay: 0.2 }}
     >
-      <div className="flex space-x-8">
+      <p className="text-md font-boska md:text-2xl font-bold bg-gradient-to-r from-red-500 via-purple-500 to-violet-600 bg-clip-text text-transparent">Bola.me</p>
+      <div className="flex space-x-2 md:space-x-8">
         {navItems.map((item, index) => (
           <motion.button
             key={item.name}
             onClick={() => scrollToSection(item.id)}
-            className="text-sm md:text-base font-medium hover:opacity-70 transition-opacity cursor-pointer"
+            className="text-xs md:text-base font-medium hover:opacity-70 transition-opacity cursor-pointer hover:underline"
             whileHover={{ scale: 1.05 }}
             whileTap={{ scale: 0.95 }}
             initial={{ opacity: 0, y: -20 }}
@@ -53,7 +55,7 @@ export default function Header() {
 
       <motion.button
         onClick={toggleTheme}
-        className={`p-2 rounded-xl transition-colors ${
+        className={`p-2 rounded-3xl transition-colors ${
           isDark ? 'hover:bg-white/10' : 'hover:bg-black/10'
         }`}
         whileHover={{ scale: 1.1 }}
