@@ -72,7 +72,7 @@ export default function Projects({ img, name, description, githubUrl, liveUrl })
             href={liveUrl}
             target="_blank"
             rel="noopener noreferrer"
-            className={`p-2 rounded-xl transition-colors ${
+            className={`p-2 rounded-3xl transition-colors ${
               isDark
                 ? 'hover:bg-white/10 text-white'
                 : 'hover:bg-black/10 text-black'
@@ -80,13 +80,13 @@ export default function Projects({ img, name, description, githubUrl, liveUrl })
             whileHover={{ scale: 1.1 }}
             whileTap={{ scale: 0.9 }}
           >
-            <ExternalLinkIcon className="w-4 h-4" />
+            <img src={isDark ? '/linkDark.png' : '/linkLight.png'} className="w-4 h-4" alt="" />
           </motion.a>
           <motion.a
             href={githubUrl}
             target="_blank"
             rel="noopener noreferrer"
-            className={`p-2 rounded-xl transition-colors ${
+            className={`p-2 rounded-3xl transition-colors ${
               isDark
                 ? 'hover:bg-white/10 text-white'
                 : 'hover:bg-black/10 text-black'
@@ -94,7 +94,7 @@ export default function Projects({ img, name, description, githubUrl, liveUrl })
             whileHover={{ scale: 1.1 }}
             whileTap={{ scale: 0.9 }}
           >
-            <GitHubIcon className="w-4 h-4" />
+            <img src={isDark ? '/githubDark.png' : '/githubLight.png'} className="w-4 h-4" alt="" />
           </motion.a>
         </div>
       </div>

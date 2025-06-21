@@ -15,73 +15,47 @@ export default function App() {
 
   const toggleTheme = () => setIsDark(!isDark);
 
-  // Moved skill data here for direct consumption by SkillOrb
-  // IMPORTANT: Replace '/me.jpeg' and '/zoro.jpeg' with actual small, relevant skill icons (e.g., '/icons/react.svg', '/icons/vue.svg')
   const skillsData = [
     {
       icon: 'CodeIcon', // Use string names here, mapping done in SkillOrb
       label: 'Frontend',
       skill: [
-        { id:1, name: 'React', img: '/icons/react.svg' },
-        { id:2, name: 'Vue', img: '/icons/vue.svg' },
-        { id:3, name: 'HTML', img: '/icons/html.svg' },
-        { id:4, name: 'CSS', img: '/icons/css.svg' },
-        { id:5, name: 'Tailwind', img: '/icons/tailwind.svg' },
-        { id:6, name: 'Motion', img: '/icons/framer-motion.svg' },
+        { id:1, name: 'React', img: '/react.png' },
+        { id:2, name: 'Vite', img: '/vite.svg' },
+        { id:3, name: 'HTML', img: '/html.png' },
+        { id:4, name: 'CSS', img: '/css.png' },
+        { id:5, name: 'Tailwind', img: '/tailwind.png' },
+        { id:6, name: 'Motion', img: '/motion.png' },
       ]
     },
     {
       icon: 'ServerIcon',
       label: 'Backend',
       skill: [
-        {id:7, name: 'Node.js', img: '/icons/nodejs.svg' },
-        {id:8, name: 'Express', img: '/icons/express.svg' },
-        {id:9, name: 'JS', img: '/icons/javascript.svg' },
-        {id:10, name: 'TS', img: '/icons/typescript.svg' },
-        {id:11, name: 'Zod', img: '/icons/zod.svg' },
-        {id:12, name: 'C++', img: '/icons/cpp.svg' },
+        {id:7, name: 'Node.js', img: '/nodejs.png' },
+        {id:8, name: 'Express', img: '/express.png' },
+        {id:9, name: 'JS', img: '/js.png' },
+        {id:10, name: 'TS', img: '/ts.png' },
+        {id:11, name: 'Zod', img: '/zod.svg' },
+        {id:12, name: 'C++', img: '/cpp.png' },
       ]
     },
     {
       icon: 'DatabaseIcon',
       label: 'Database',
       skill: [
-        {id:13, name: 'MongoDB', img: '/icons/mongodb.svg' }
+        {id:13, name: 'MongoDB', img: '/mongodb.png' }
       ]
     },
     {
       icon: 'DesignIcon',
       label: 'Designing',
       skill: [
-        {id:14, name: 'Figma', img: '/icons/figma.svg' },
-        {id:15, name: 'Canva', img: '/icons/canva.svg' },
+        {id:14, name: 'Figma', img: '/figma.png' },
+        {id:15, name: 'Canva', img: '/canva.png' },
       ]
     }
   ];
-
-  // const projectsData = [
-  //   {
-  //     img: '/Rento.png',
-  //     name: 'Rento',
-  //     description: 'A modern rental platform with advanced search and booking capabilities',
-  //     githubUrl: 'https://github.com/Aryan-205',
-  //     liveUrl: 'https://x.com/BolaJi_69'
-  //   },
-  //   {
-  //     img: '/Rento.png',
-  //     name: 'Portfolio',
-  //     description: 'Interactive portfolio showcasing modern web development skills',
-  //     githubUrl: 'https://github.com/Aryan-205',
-  //     liveUrl: 'https://x.com/BolaJi_69'
-  //   },
-  //   {
-  //     img: '/Rento.png',
-  //     name: 'Task Manager',
-  //     description: 'Full-stack task management app with real-time collaboration',
-  //     githubUrl: 'https://github.com/Aryan-205',
-  //     liveUrl: 'https://x.com/BolaJi_69'
-  //   }
-  // ];
 
   return (
     <ThemeContext.Provider value={{ isDark, toggleTheme }}>
@@ -183,56 +157,56 @@ export default function App() {
             </div>
           </motion.div>
 
-  {/* IMAGE */}
-  <motion.div
-    className="flex justify-center"
-    initial={{ opacity: 0, scale: 0.8 }}
-    animate={{ opacity: 1, scale: 1 }}
-    transition={{ duration: 0.8, delay: 0.4 }}
-  >
-    <motion.div
-      className="relative w-52 h-52 sm:w-64 sm:h-64 md:w-80 md:h-80 rounded-full"
-      style={{
-        perspective: '1000px',
-        transformStyle: 'preserve-3d'
-      }}
-      animate={{ rotateY: [0, 180, 180, 360] }}
-      transition={{
-        duration: 20,
-        repeat: Infinity,
-        repeatType: "loop",
-        ease: "easeInOut",
-        times: [0, 0.25, 0.75, 1]
-      }}
-    >
-      {/* Front */}
-      <motion.img
-        src="/zoro.jpeg"
-        alt="Aryan Bola Front"
-        className={`w-full h-full rounded-full object-cover border-4 absolute inset-0 backface-hidden ${
-          isDark ? 'border-white/20' : 'border-black/20'
-        }`}
-      />
-      {/* Back */}
-      <motion.img
-        src="/me.jpeg"
-        alt="Aryan Bola Back"
-        className={`w-full h-full rounded-full object-cover border-4 absolute inset-0 backface-hidden ${
-          isDark ? 'border-white/20' : 'border-black/20'
-        }`}
-        style={{ transform: 'rotateY(180deg)' }}
-      />
-      {/* Dashed border */}
-      <motion.div
-        className={`absolute inset-0 rounded-full border-4 border-dashed ${
-          isDark ? 'border-white/10' : 'border-black/10'
-        }`}
-        animate={{ rotate: 360 }}
-        transition={{ duration: 30, repeat: Infinity, ease: "linear" }}
-      />
-    </motion.div>
-  </motion.div>
-</motion.section>
+          {/* IMAGE */}
+          <motion.div
+            className="flex justify-center"
+            initial={{ opacity: 0, scale: 0.8 }}
+            animate={{ opacity: 1, scale: 1 }}
+            transition={{ duration: 0.8, delay: 0.4 }}
+          >
+            <motion.div
+              className="relative w-52 h-52 sm:w-64 sm:h-64 md:w-80 md:h-80 rounded-full"
+              style={{
+                perspective: '1000px',
+                transformStyle: 'preserve-3d'
+              }}
+              animate={{ rotateY: [0, 180, 180, 360] }}
+              transition={{
+                duration: 20,
+                repeat: Infinity,
+                repeatType: "loop",
+                ease: "easeInOut",
+                times: [0, 0.25, 0.75, 1]
+              }}
+            >
+              {/* Front */}
+              <motion.img
+                src="/zoro.jpeg"
+                alt="Aryan Bola Front"
+                className={`w-full h-full rounded-full object-cover border-4 absolute inset-0 backface-hidden ${
+                  isDark ? 'border-white/20' : 'border-black/20'
+                }`}
+              />
+              {/* Back */}
+              <motion.img
+                src="/me.jpeg"
+                alt="Aryan Bola Back"
+                className={`w-full h-full rounded-full object-cover border-4 absolute inset-0 backface-hidden ${
+                  isDark ? 'border-white/20' : 'border-black/20'
+                }`}
+                style={{ transform: 'rotateY(180deg)' }}
+              />
+              {/* Dashed border */}
+              <motion.div
+                className={`absolute inset-0 rounded-full border-4 border-dashed ${
+                  isDark ? 'border-white/10' : 'border-black/10'
+                }`}
+                animate={{ rotate: 360 }}
+                transition={{ duration: 30, repeat: Infinity, ease: "linear" }}
+              />
+            </motion.div>
+          </motion.div>
+        </motion.section>
 
         {/* Skills Section */}
         <motion.section
@@ -421,29 +395,29 @@ export default function App() {
             </p>
             <div className="flex justify-around items-center">
               {/* X (Twitter) */}
-              <div className="flex flex-col items-center">
-                <a href="">
+              <div className="flex flex-col items-center hover:scale-110 duration-300 ease-in-out transition">
+                <a target="_blank" href="https://x.com/BolaJi_69">
                   <img src={`${isDark ? '/twitterDark.png' : '/twitterLight.png'}`} className="w-8 h-8 " alt="X (Twitter) icon" />
                 </a>
                 <p className={`text-base md:text-xl ${isDark ? 'text-gray-400' : 'text-gray-600'}`}>X (Twitter)</p>
               </div>
               {/* Github */}
-              <div className="flex flex-col items-center">
+              <div className="flex flex-col items-center hover:scale-110 duration-300 ease-in-out transition">
                 <a target="_blank" href="https://github.com/Aryan-205">
                   <img src={`${isDark ? '/githubDark.png' : '/githubLight.png'}`} className="w-8 h-8 " alt="Github icon" />
                 </a>
                 <p className={`text-base md:text-xl ${isDark ? 'text-gray-400' : 'text-gray-600'}`}>Github</p>
               </div>
               {/* Instagram */}
-              <div className="flex flex-col items-center">
+              <div className="flex flex-col items-center hover:scale-110 duration-300 ease-in-out transition">
                 <a target="_blank" href="https://www.instagram.com/__aryan.bola__/">
                   <img src={`${isDark ? '/instagramDark.png' : '/instagramLight.png'}`} className="w-8 h-8 " alt="Instagram icon" />
                 </a>
                 <p className={`text-base md:text-xl ${isDark ? 'text-gray-400' : 'text-gray-600'}`}>Instagram</p>
               </div>
               {/* Email */}
-              <div className="flex flex-col items-center">
-                <a href="">
+              <div className="flex flex-col items-center hover:scale-110 duration-300 ease-in-out transition">
+                <a href="mailto:aaryann5002@gmail.com">
                   <img src={`${isDark ? '/EmailDark.png' : '/EmailLight.png'}`} className="w-8 h-8 " alt="Email icon" />
                 </a>
                 <p className={`text-base md:text-xl ${isDark ? 'text-gray-400' : 'text-gray-600'}`}>Email</p>
@@ -464,6 +438,7 @@ export default function App() {
         >
           <p>© 2025 Aryan Bola</p>
         </motion.footer>
+
       </div>
     </ThemeContext.Provider>
   );
