@@ -1,30 +1,6 @@
-import { motion, useScroll, useTransform } from "framer-motion"; // Assuming you need these for header animations
+import { motion } from "framer-motion"; 
 import { useContext } from "react";
-import { ThemeContext } from '../App.jsx'; // Import ThemeContext from App.jsx
-
-// You need to import the SVG icons if they are used directly in Header.jsx
-// It's generally better to pass them as props or define them in a common file
-// For now, I'm defining them here to make Header.jsx self-contained for these icons.
-// A better long-term solution would be a separate 'icons.js' file.
-const SunIcon = ({ className }) => (
-  <svg className={className} viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2">
-    <circle cx="12" cy="12" r="5"/>
-    <path d="m12 1 0 2"/>
-    <path d="m12 21 0 2"/>
-    <path d="m4.2 4.2 1.4 1.4"/>
-    <path d="m18.4 18.4 1.4 1.4"/>
-    <path d="m1 12 2 0"/>
-    <path d="m21 12 2 0"/>
-    <path d="m4.2 19.8 1.4-1.4"/>
-    <path d="m18.4 5.6 1.4-1.4"/>
-  </svg>
-);
-
-const MoonIcon = ({ className }) => (
-  <svg className={className} viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2">
-    <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"/>
-  </svg>
-);
+import { ThemeContext } from '../App.jsx'; 
 
 export default function Header() {
   const { isDark, toggleTheme } = useContext(ThemeContext);
@@ -84,8 +60,8 @@ export default function Header() {
         whileTap={{ scale: 0.9 }}
       >
         {isDark ?
-          <SunIcon className="w-5 h-5" /> :
-          <MoonIcon className="w-5 h-5" />
+          <img src="/sun.png" className="w-5 h-5" /> :
+          <img src="/moon.png" className="w-5 h-5" />
         }
       </motion.button>
     </motion.div>

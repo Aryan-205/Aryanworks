@@ -1,4 +1,4 @@
-import { motion } from "framer-motion"; // Add motion import
+import { motion } from "motion/react"; // Add motion import
 
 export default function AnimatedBackground({ isDark }) {
   return (

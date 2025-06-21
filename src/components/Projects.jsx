@@ -1,4 +1,4 @@
-import { motion } from "framer-motion"; // Add motion import
+import { motion } from "motion/react"; // Add motion import
 import { useContext } from "react";
 import { ThemeContext } from '../App.jsx'; // Import ThemeContext from App.jsx
 
