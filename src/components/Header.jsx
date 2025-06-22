@@ -35,7 +35,7 @@ export default function Header() {
       animate={{ y: 0, opacity: 1 }}
       transition={{ duration: 0.6, delay: 0.2 }}
     >
-      <p className="text-md font-boska md:text-2xl font-bold bg-gradient-to-r from-red-500 via-purple-500 to-violet-600 bg-clip-text text-transparent">Bola.me</p>
+      <p className="text-md font-boska md:text-2xl font-bold bg-gradient-to-r from-red-500 via-purple-500 to-violet-600 bg-clip-text text-transparent">Bola</p>
       <div className="flex space-x-2 md:space-x-8">
         {navItems.map((item, index) => (
           <motion.button

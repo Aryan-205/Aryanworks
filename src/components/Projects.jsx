@@ -23,6 +23,7 @@ export default function Projects({ img, name, description, githubUrl, liveUrl,vi
         <img
           src={img}
           alt={name}
+          loading="lazy"
           className="w-full h-48 object-cover transition-transform duration-500 group-hover:scale-110"
         />
         <div className={`absolute inset-0 bg-gradient-to-t ${
@@ -64,7 +65,7 @@ export default function Projects({ img, name, description, githubUrl, liveUrl,vi
             whileHover={{ scale: 1.1 }}
             whileTap={{ scale: 0.9 }}
           >
-            <img src={isDark ? '/linkDark.png' : '/linkLight.png'} className="w-4 h-4" alt="" />
+            <img src={isDark ? '/linkDark.png' : '/linkLight.png'} loading="lazy" className="w-4 h-4" alt="" />
           </motion.a>
           <motion.a
             href={githubUrl}
@@ -78,7 +79,7 @@ export default function Projects({ img, name, description, githubUrl, liveUrl,vi
             whileHover={{ scale: 1.1 }}
             whileTap={{ scale: 0.9 }}
           >
-            <img src={isDark ? '/githubDark.png' : '/githubLight.png'} className="w-4 h-4" alt="" />
+            <img src={isDark ? '/githubDark.png' : '/githubLight.png'} loading="lazy" className="w-4 h-4" alt="" />
           </motion.a>
         </div>
       </div>

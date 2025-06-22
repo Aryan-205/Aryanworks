@@ -95,6 +95,7 @@ export default function SkillOrb({ icon, label, skills, delay = 0 }) { // 'icon'
               <img
                 src={item.img}
                 alt={item.name}
+                loading="lazy"
                 className="w-4 h-4 md:w-5 md:h-5 ml-2 object-contain" // Adjusted sizes and added object-contain
               />
           </motion.button>

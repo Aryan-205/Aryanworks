@@ -399,28 +399,28 @@ export default function App() {
               {/* X (Twitter) */}
               <div className="flex flex-col items-center hover:scale-110 duration-300 ease-in-out transition">
                 <a target="_blank" href="https://x.com/BolaJi_69">
-                  <img src={`${isDark ? '/twitterDark.png' : '/twitterLight.png'}`} className="w-8 h-8 " alt="X (Twitter) icon" />
+                  <img src={`${isDark ? '/twitterDark.png' : '/twitterLight.png'}`} loading="lazy" className="w-8 h-8 " alt="X (Twitter) icon" />
                 </a>
                 <p className={`text-base md:text-xl ${isDark ? 'text-gray-400' : 'text-gray-600'}`}>X (Twitter)</p>
               </div>
               {/* Github */}
               <div className="flex flex-col items-center hover:scale-110 duration-300 ease-in-out transition">
                 <a target="_blank" href="https://github.com/Aryan-205">
-                  <img src={`${isDark ? '/githubDark.png' : '/githubLight.png'}`} className="w-8 h-8 " alt="Github icon" />
+                  <img src={`${isDark ? '/githubDark.png' : '/githubLight.png'}`} loading="lazy" className="w-8 h-8 " alt="Github icon" />
                 </a>
                 <p className={`text-base md:text-xl ${isDark ? 'text-gray-400' : 'text-gray-600'}`}>Github</p>
               </div>
               {/* Instagram */}
               <div className="flex flex-col items-center hover:scale-110 duration-300 ease-in-out transition">
                 <a target="_blank" href="https://www.instagram.com/__aryan.bola__/">
-                  <img src={`${isDark ? '/instagramDark.png' : '/instagramLight.png'}`} className="w-8 h-8 " alt="Instagram icon" />
+                  <img src={`${isDark ? '/instagramDark.png' : '/instagramLight.png'}`} loading="lazy" className="w-8 h-8 " alt="Instagram icon" />
                 </a>
                 <p className={`text-base md:text-xl ${isDark ? 'text-gray-400' : 'text-gray-600'}`}>Instagram</p>
               </div>
               {/* Email */}
               <div className="flex flex-col items-center hover:scale-110 duration-300 ease-in-out transition">
                 <a href="mailto:aaryann5002@gmail.com">
-                  <img src={`${isDark ? '/EmailDark.png' : '/EmailLight.png'}`} className="w-8 h-8 " alt="Email icon" />
+                  <img src={`${isDark ? '/EmailDark.png' : '/EmailLight.png'}`} loading="lazy" className="w-8 h-8 " alt="Email icon" />
                 </a>
                 <p className={`text-base md:text-xl ${isDark ? 'text-gray-400' : 'text-gray-600'}`}>Email</p>
               </div>
