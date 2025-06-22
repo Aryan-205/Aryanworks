@@ -4,20 +4,23 @@
     "name": "Rento",
     "description": "A modern rental platform with clean ui and booking capabilities",
     "githubUrl": "https://github.com/Aryan-205/Rento",
-    "liveUrl": "https://rento-beta.vercel.app/"
+    "liveUrl": "https://rento-beta.vercel.app/",
+    "views":2
   },
   {
     "img": "/Portfolio.png",
     "name": "Portfolio",
     "description": "Interactive portfolio showcasing modern web development skills",
     "githubUrl": "https://github.com/Aryan-205/Aryanworks",
-    "liveUrl": "https://x.com/BolaJi_69"
+    "liveUrl": "https://x.com/BolaJi_69",
+    "views":6
   },
   {
     "img": "/socialMedia.png",
     "name": "Social Media App",
     "description": "Full-stack Social media app with photo upload and edit feature",
     "githubUrl": "https://github.com/Aryan-205/SocialMediaApp",
-    "liveUrl": "https://x.com/BolaJi_69"
+    "liveUrl": "https://x.com/BolaJi_69",
+    "views":1
   }
 ]

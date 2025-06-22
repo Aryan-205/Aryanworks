@@ -1,0 +1,20 @@
+[
+  {
+    "img": "/x_card.jpeg",
+    "name": "X-Card",
+    "description": "A cool card for your profile on X made with tailwind and QR generation",
+    "views":5
+  },
+  {
+    "img": "/marscard.png",
+    "name": "Mars-Card",
+    "description": "Futuristic card with appealing design made with tailwindcss and QR generation",
+    "views":3
+  },
+  {
+    "img": "/3DButton.png",
+    "name": "3D-Button",
+    "description": "3D Button made with motion/react and tailwindcss",
+    "views":6
+  }
+]

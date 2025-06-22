@@ -2,8 +2,7 @@ import { motion } from "motion/react"; // Add motion import
 import { useContext } from "react";
 import { ThemeContext } from '../App.jsx'; // Import ThemeContext from App.jsx
 
-
-export default function Projects({ img, name, description, githubUrl, liveUrl,views }) {
+export default function Design({ img, name, description,views}) {
   const { isDark } = useContext(ThemeContext);
 
   return (
@@ -50,37 +49,6 @@ export default function Projects({ img, name, description, githubUrl, liveUrl,vi
         >
           {views}k+ Views
         </motion.span>
-
-        <div className="flex space-x-2">
-          <motion.a
-            href={liveUrl}
-            target="_blank"
-            rel="noopener noreferrer"
-            className={`p-2 rounded-3xl transition-colors ${
-              isDark
-                ? 'hover:bg-white/10 text-white'
-                : 'hover:bg-black/10 text-black'
-            }`}
-            whileHover={{ scale: 1.1 }}
-            whileTap={{ scale: 0.9 }}
-          >
-            <img src={isDark ? '/linkDark.png' : '/linkLight.png'} className="w-4 h-4" alt="" />
-          </motion.a>
-          <motion.a
-            href={githubUrl}
-            target="_blank"
-            rel="noopener noreferrer"
-            className={`p-2 rounded-3xl transition-colors ${
-              isDark
-                ? 'hover:bg-white/10 text-white'
-                : 'hover:bg-black/10 text-black'
-            }`}
-            whileHover={{ scale: 1.1 }}
-            whileTap={{ scale: 0.9 }}
-          >
-            <img src={isDark ? '/githubDark.png' : '/githubLight.png'} className="w-4 h-4" alt="" />
-          </motion.a>
-        </div>
       </div>
     </motion.div>
   );

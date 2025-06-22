@@ -2,7 +2,9 @@ import { motion } from "motion/react";
 import { useState, createContext } from "react"; // Removed useContext as it's not directly used here anymore
 import Header from './components/Header.jsx'
 import Projects from './components/Projects.jsx'
+import Design from './components/Design.jsx'
 import projectsData from './data/project.json'
+import designData from './data/design.json'
 import SkillOrb from './components/SkillOrb.jsx' // Import SkillOrb
 import AnimatedBackground from './components/AnimatedBackground.jsx'
 
@@ -218,7 +220,7 @@ export default function App() {
           viewport={{ once: true }}
         >
           <motion.h2
-            className={`text-3xl md:text-5xl font-bold text-center mb-16 ${isDark ? 'text-white' : 'text-black'}`}
+            className={`text-3xl md:text-5xl font-bold font-boska text-center mb-16 ${isDark ? 'text-white' : 'text-black'}`}
             initial={{ opacity: 0, y: 30 }}
             whileInView={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.6 }}
@@ -250,7 +252,7 @@ export default function App() {
           viewport={{ once: true }}
         >
           <motion.h2
-            className={`text-3xl md:text-5xl font-bold text-center mb-16 ${isDark ? 'text-white' : 'text-black'}`}
+            className={`text-3xl md:text-5xl font-bold font-boska text-center mb-16 ${isDark ? 'text-white' : 'text-black'}`}
             initial={{ opacity: 0, y: 30 }}
             whileInView={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.6 }}
@@ -268,6 +270,7 @@ export default function App() {
                 description={project.description}
                 githubUrl={project.githubUrl}
                 liveUrl={project.liveUrl}
+                views={project.views}
               />
             ))}
           </div>
@@ -303,7 +306,7 @@ export default function App() {
           viewport={{ once: true }}
         >
           <motion.h2
-            className={`text-3xl md:text-5xl font-bold text-center mb-16 ${isDark ? 'text-white' : 'text-black'}`}
+            className={`text-3xl md:text-5xl font-bold font-boska text-center mb-16 ${isDark ? 'text-white' : 'text-black'}`}
             initial={{ opacity: 0, y: 30 }}
             whileInView={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.6 }}
@@ -313,14 +316,13 @@ export default function App() {
           </motion.h2>
 
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 max-w-7xl mx-auto">
-            {projectsData.map((project, index) => (
-              <Projects
+            {designData.map((project, index) => (
+              <Design
                 key={index}
                 img={project.img}
                 name={project.name}
                 description={project.description}
-                githubUrl={project.githubUrl}
-                liveUrl={project.liveUrl}
+                views={project.views}
               />
             ))}
           </div>
@@ -356,7 +358,7 @@ export default function App() {
           viewport={{ once: true }}
         >
           <motion.h2
-            className={`text-3xl md:text-5xl font-bold text-center mb-8 ${isDark ? 'text-white' : 'text-black'}`}
+            className={`text-3xl md:text-5xl font-bold font-boska text-center mb-8 ${isDark ? 'text-white' : 'text-black'}`}
             initial={{ opacity: 0, y: 30 }}
             whileInView={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.6 }}
@@ -390,7 +392,7 @@ export default function App() {
             transition={{ duration: 0.8, delay: 0.2 }}
             viewport={{ once: true }}
           >
-            <p className={`text-lg md:text-2xl leading-relaxed ${isDark ? 'text-gray-300' : 'text-gray-700'}`}>
+            <p className={`text-lg md:text-2xl font-boska leading-relaxed ${isDark ? 'text-gray-300' : 'text-gray-700'}`}>
               Connect with me
             </p>
             <div className="flex justify-around items-center">
