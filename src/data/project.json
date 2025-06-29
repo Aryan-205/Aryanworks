@@ -16,11 +16,11 @@
     "views":6
   },
   {
-    "img": "/socialMedia.png",
-    "name": "Social Media App",
-    "description": "Full-stack Social media app with photo upload and edit feature",
-    "githubUrl": "https://github.com/Aryan-205/SocialMediaApp",
-    "liveUrl": "https://x.com/BolaJi_69",
-    "views":1
+    "img": "/AppleBentoGrid.jpeg",
+    "name": "Apple Bento Design",
+    "description": "A interactive Bento Grid design made with react and motion",
+    "githubUrl": "https://github.com/Aryan-205/Bento",
+    "liveUrl": "http://bento-virid.vercel.app",
+    "views":3
   }
 ]
