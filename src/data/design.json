@@ -1,15 +1,15 @@
 [
   {
-    "img": "/x_card.jpeg",
-    "name": "X-Card",
-    "description": "A cool card for your profile on X made with tailwind and QR generation",
+    "img": "/rotating.png",
+    "name": "Planetary Orbits",
+    "description": "planets spinning in a orbit, made using keyframes in css",
     "views":5
   },
   {
-    "img": "/marscard.png",
-    "name": "Mars-Card",
-    "description": "Futuristic card with appealing design made with tailwindcss and QR generation",
-    "views":3
+    "img": "/AppleBentoGrid.jpeg",
+    "name": "Apple Bento Design",
+    "description": "A interactive Bento Grid design made with react and motion",
+    "views":4
   },
   {
     "img": "/3DButton.png",

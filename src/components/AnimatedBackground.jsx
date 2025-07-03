@@ -1,37 +1,9 @@
 import { motion } from "motion/react"; // Add motion import
 
 export default function AnimatedBackground({ isDark }) {
-  console.log(Math.floor(Math.random()*100))
   return (
     <div className="fixed inset-0 overflow-hidden pointer-events-none">
       {/* Floating Orbs */}
-      {[...Array(6)].map((_, i) => (
-        <motion.div
-          key={i}
-          className={`absolute rounded-md ${
-            isDark
-              ? 'bg-gradient-to-r from-blue-500/10 to-purple-500/10'
-              : 'bg-gradient-to-r from-blue-300/20 to-purple-300/20'
-          }`}
-          style={{
-            width: Math.random() * 300 + 100,
-            height: Math.random() * 300 + 100,
-            left: `${Math.random() * 100}%`,
-            top: `${Math.random() * 100}%`,
-          }}
-          animate={{
-            x: [0, Math.random() * 200 - 100],
-            y: [0, Math.random() * 200 - 100],
-            scale: [1, 1.2, 1],
-          }}
-          transition={{
-            duration: Math.random() * 10 + 10,
-            repeat: Infinity,
-            repeatType: "reverse",
-            ease: "easeInOut",
-          }}
-        />
-      ))}
 
       {/* Particle System */}
       {[...Array(200)].map((_, i) => (

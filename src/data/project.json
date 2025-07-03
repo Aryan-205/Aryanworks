@@ -16,11 +16,11 @@
     "views":6
   },
   {
-    "img": "/AppleBentoGrid.jpeg",
-    "name": "Apple Bento Design",
-    "description": "A interactive Bento Grid design made with react and motion",
-    "githubUrl": "https://github.com/Aryan-205/Bento",
-    "liveUrl": "http://bento-virid.vercel.app",
+    "img": "/windows.png",
+    "name": "Windows OS",
+    "description": "A Windows OS inside your browser",
+    "githubUrl": "https://github.com/Aryan-205/WindowsSite",
+    "liveUrl": "#",
     "views":3
   }
 ]
