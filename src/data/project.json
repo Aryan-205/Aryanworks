@@ -20,7 +20,7 @@
     "name": "Windows OS",
     "description": "A Windows OS inside your browser",
     "githubUrl": "https://github.com/Aryan-205/WindowsSite",
-    "liveUrl": "#",
+    "liveUrl": "https://windows-site-gq1x.vercel.app/",
     "views":3
   }
 ]
